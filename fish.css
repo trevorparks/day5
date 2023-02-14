@@ -1,0 +1,73 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    min-height: 100px;
+    max-width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 35px;
+    color: white;
+    text-shadow: 3px 3px 5px black;
+}
+
+.fishlist{
+    grid-column: 1/2;
+justify-content: center;
+align-items: center;
+margin: 50px;
+max-width: 100%;
+width: 33%
+
+  }
+.flexfish{
+    grid-column: 2/2;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+max-width: 100%;
+width: 66%;
+  }
+
+  .fish-photo1{
+    grid-row: 1/3;
+    max-width: 200px;
+    max-height: 200px;
+    padding: 10px;
+  }
+  .fish-photo2{
+    grid-row: 2/3;
+    max-width: 200px;
+    max-height: 200px;
+    padding: 10px;
+
+  }
+  .fish-photo3{
+    grid-row: 3/3;
+    max-width: 200px;
+    max-height: 200px;
+    padding: 10px;
+
+  }
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    min-height: 100px;
+    max-width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 35px;
+    color: white;
+    text-shadow: 3px 3px 5px black;
+    background-image: url("https://www.icefresh.de/static/files/products/salmon.png");
+    background-repeat: repeat-x;
+}
