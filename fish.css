@@ -11,6 +11,9 @@
     color: white;
     text-shadow: 3px 3px 5px black;
 }
+.navbar{
+  justify-content: center;
+}
 
 .fishlist{
     grid-column: 1/2;
@@ -36,6 +39,10 @@ width: 66%;
     max-height: 200px;
     padding: 10px;
   }
+  .fish-photo1:hover {
+    -webkit-transform: translate(20px, 20px);
+    transform: translate(20px, 20px);
+  }
   .fish-photo2{
     grid-row: 2/3;
     max-width: 200px;
@@ -43,12 +50,39 @@ width: 66%;
     padding: 10px;
 
   }
+  .fish-photo2:hover {
+    -webkit-transform: skew(20deg, 20deg);
+    transform: skew(20deg, 20deg);
+  }
   .fish-photo3{
     grid-row: 3/3;
     max-width: 200px;
     max-height: 200px;
     padding: 10px;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: all;
 
+    -webkit-transition-delay: 500ms;
+    transition-delay: 500ms;
+
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+
+    /*linear, ease,  ease-in, ease-out, ease-in-out, cubic-bezier(n,n,n,n), steps*/
+    /*-webkit-transition-timing-function: ease-in-out;*/
+    transition-timing-function: linear;
+
+    /*SHORTHAND*/
+    /*transition: property duration timing-function delay*/
+    /*above example would be:*/
+    /*transition: all 1s linear 500ms;*/
+    /* Properties you can transition:
+        https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties
+         */
+  }
+  .fish-photo3:hover {
+    -webkit-transform: skew(35deg, 25deg);
+    transform: skew(35deg, 25deg);
   }
 .container{
     display: grid;
